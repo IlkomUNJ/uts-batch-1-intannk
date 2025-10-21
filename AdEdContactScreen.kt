@@ -95,10 +95,10 @@ fun AddEditContactScreen(
                     } else {
                         if (isEditing) {
                             existingContact?.apply {
-                                name = name.text
-                                phone = phone.text
-                                email = email.text
-                                address = address.text
+                                this.name = name.text
+                                this.phone = phone.text
+                                this.email = email.text
+                                this.address = address.text
                             }
                         } else {
                             contactList.add(
@@ -132,4 +132,5 @@ fun PreviewAddEditContactScreen() {
         onSave = {}
     )
 }
+
 
