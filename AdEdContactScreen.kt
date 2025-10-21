@@ -19,7 +19,7 @@ data class Contact(
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AddEditContactScreen(
-    contactList: MutableList<Contact>
+    contactList: MutableList<Contact>,  
     contactIndex: Int? = null,
     onSave: () -> Unit
 ) {
@@ -132,5 +132,3 @@ fun PreviewAddEditContactScreen() {
         onSave = {}
     )
 }
-
-
